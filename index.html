@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aparat Cafea</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+</style>
+</head>
+<body>
+    <div id="text"></div>
+    <div id="buttons-wrapper">
+        <button class="btn" id="btn-addHalf" onclick="coffeeMachine.add50cents()">50 de bani</button>
+        <button class="btn" id="btn-addOne" onclick="coffeeMachine.add1dollar()">1 leu</button>
+        <button class="btn"id="btn-reset" onclick="coffeeMachine.reset()">Reset</button> <br> <br>
+        <button class="btn" id="btn-coffee" onclick="coffeeMachine.getCoffee()">Cafea - 1 RON</button>
+        <button class="btn" id="btn-expresso" onclick="coffeeMachine.getExpresso()">Expresso 1,5 RON</button>
+        <button class="btn" id="btn-capuccino" onclick="coffeeMachine.getCapuccino()">Capuccino - 2 RON</button>
+    </div>
+    <div id="cmHistory"></div>
+    <script src='state-machine.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>
