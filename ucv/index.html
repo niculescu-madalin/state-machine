@@ -7,27 +7,30 @@
 <style>
   body {
     font-family: Arial, sans-serif;
-    font-size: 1.5rem;
+    padding: 2rem;
   }
   .btn {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     border-radius: 10px;
+    width: 100%;
+    margin: 4px;
+  }
+  h1 {
+    margin: 0px;
+  }
+  h2 {
+    margin: 0px;
   }
 </style>
 </head>
 <body>
-    <div id="text"></div>
-    <div id="buttons-wrapper">
-        <button class="btn" id="btn-addHalf" onclick="coffeeMachine.add50cents()">50 de bani</button>
-        <button class="btn" id="btn-addOne" onclick="coffeeMachine.add1dollar()">1 leu</button>
-        <button class="btn"id="btn-reset" onclick="coffeeMachine.reset()">Reset</button> <br> <br>
-        <button class="btn" id="btn-coffee" onclick="coffeeMachine.getCoffee()">Cafea - 1 RON</button>
-        <button class="btn" id="btn-expresso" onclick="coffeeMachine.getExpresso()">Expresso 1,5 RON</button>
-        <button class="btn" id="btn-capuccino" onclick="coffeeMachine.getCapuccino()">Capuccino - 2 RON</button>
-    </div>
-    <div id="cmHistory"></div>
-    <script src='state-machine.js'></script>
-    <script src='script.js'></script>
+    <h1 id="info"></h1>
+    <hr>
+    <div id="buttons-wrapper"> </div>
+    <h2 id="stateMachineHistory"></h2>
+    <script src='/state-machine.js'></script>
+    <script src='/ucv/script.js'></script>
+    
 </body>
 </html>
